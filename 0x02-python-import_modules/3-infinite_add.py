@@ -3,6 +3,7 @@
 if __name__ == "__main__":
 
         from sys import argv
+        import trythis
 
             num_args = len(argv)
 
@@ -12,4 +13,4 @@ if __name__ == "__main__":
 
                                 total += int(argv[i])
 
-                                    print("{:d}".format(total))
+                                    print("{:d}".format(total)i)
