@@ -3,7 +3,6 @@
 if __name__ == "__main__":
 
         from sys import argv
-        import trythis
 
             num_args = len(argv)
 
