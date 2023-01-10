@@ -1,5 +1,5 @@
 import c types
-lib = c types.CDLL(' ./libPylist.so')
+lib = c types.CDLL('./libPyList.so')
 lib.print_python_list_info.argtypes = [ctypes.py_object]
 l = ['hello', 'world']
 lib.print_python_list_info(1)
