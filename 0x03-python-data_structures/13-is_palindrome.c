@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-listint_t *head;
+struct listint_t **head;
 
 head = NULL;
 add_nodeint_end(&head, 1);
@@ -20,7 +20,7 @@ add_nodeint_end(&head, 50);
 add_nodeint_end(&head, 972);
 add_nodeint_end(&head, 17);
 add_nodeint_end(&head, 1);
-print_listint(head);
+printf(head);
 
 if (is_palindrome(&head) == 1)
 	printf("Linked list is a palindrome\n");
