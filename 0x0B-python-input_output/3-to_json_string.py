@@ -1,14 +1,16 @@
 #!/usr/bin/python3
+import json
+
+
 """
-is_kind_of_class function module.
+to_json_string function module.
 
-Define is_kind_of_class function.
+Define to_json_string function.
 """
 
 
-def is_kind_of_class(obj, a_class):
-    """Return whether obj is an instance of a_class or any of it's parents.
-    obj: an object.
-    a_class: a class.
+def to_json_string(my_obj):
+    """Returns the JSON representation of an object (string).
+    my_obj: the object to dump into JSON.
     """
-    return(isinstance(obj, a_class))
+    return json.dumps(my_obj)
