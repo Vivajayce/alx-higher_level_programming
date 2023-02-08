@@ -7,5 +7,5 @@ Define BaseGeometry class.
 
 
 class BaseGeometry:
-     """Define a BaseGeometry."""
+    """Define a BaseGeometry."""
      pass
