@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-"""
-is_same_class function module.
-
-Define is_same_class function.
-"""
-
-
-def is_same_class(obj, a_class):
-    """Return whether obj is an instance of a_class.
-    obj: an object.
-    a_class: a class.
-    """
-    return(type(obj) is a_class)
+def read_lines(filename="", nb_lines=0):
+    with open(filename, encoding="utf-8") as fd:
+        if (nb_lines == 0):
+            print(fd.read(), end="")
+        else:
+            for line in fd:
+                if (nb_lines > 0):
+                    print(line, end="")
+                    nb_lines -= 1
