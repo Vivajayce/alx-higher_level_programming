@@ -1,22 +1,17 @@
 #!/usr/bin/python3
 """
-   add_integer module.
-   Defines add_integer function, safely.
+    Insert here module comment
 """
 
 
 def add_integer(a, b=98):
-    """Return the sum of a + b, both integers; b default is 98.
-    a (int or float): if float, will be cast to int.
-    b (int or float)(default = 98): if float, will be cast to int.
-    See tests/0-add_integers.txt for test cases.
-    """
-    if isinstance(a, float):
-        a = int(a)
-    if isinstance(b, float):
-        b = int(b)
-    if not isinstance(a, int):
+    """ add two integers or flots """
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    if not isinstance(b, int):
+    if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
-    return a + b
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
+    return (a + b)
