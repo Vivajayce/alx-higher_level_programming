@@ -1,5 +1,11 @@
 #!/usr/bin/node
-// reverses a list
+'use strict';
 exports.esrever = function (list) {
-  return list.sort(() => 1);
+  const list2 = [];
+  let n = 0;
+  for (let i = list.length - 1; i >= 0; i--) {
+    list2[n] = list[i];
+    n++;
+  }
+  return list2;
 };
