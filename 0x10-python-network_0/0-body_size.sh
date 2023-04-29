@@ -1,3 +1,3 @@
 #!/bin/bash
-# Curls request and display bytes received
-curl -so /dev/null -w '%{size_download}\n' "$1"
+# that takes in a URL, sends a request to that URL using curl, and displays the size of the body of the response in bytes
+curl -sw "\n%{size_download}\n" "$1" | tail -1
